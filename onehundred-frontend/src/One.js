@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+
+export default class One extends Component {
+  
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(event) {
+        event.preventDefault();
+        const body = document.querySelector('body')
+        const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'white']
+        const colorIndex= parseInt(Math.random()*colors.length+1)
+        body.style.backgroundColor = colors[colorIndex]
+    }
+
+    render () {
+        return (
+        <div className="One">
+            <button onClick={this.handleClick}>Change Background Color</button>
+        </div>
+        )
+    }
+}
