@@ -14,6 +14,11 @@ export default class Two extends Component {
 
     componentDidMount() {
         //fetch from quote web page or backend to populate state
+        //https://blog.hubspot.com/sales/famous-quotes
+        fetch('https://blog.hubspot.com/sales/famous-quotes')
+        .then(response => response.text())
+        .then(data => console.log(data))
+        .catch(err => alert(err))
       }
 
     handleClick(event) {
@@ -24,7 +29,7 @@ export default class Two extends Component {
     render () {
         return (
         <div className="One">
-            <button onClick={this.handleClick}>Change Background Color</button>
+            <button onClick={this.handleClick}>Generate New Quote</button>
         </div>
         )
     }
