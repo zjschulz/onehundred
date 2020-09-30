@@ -19,7 +19,8 @@ export default class Three extends Component {
     handleClick(event) {
         event.preventDefault();
         this.setState({
-            comments: this.state.comments.concat(this.state.message)
+            comments: this.state.comments.concat(this.state.message),
+            message: ""
         })
     }
 
