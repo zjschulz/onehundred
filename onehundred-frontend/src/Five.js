@@ -21,6 +21,11 @@ export default class Five extends Component {
                 currentindex: this.state.currentindex - 1
             })
         }
+        else if (this.state.currentindex === 0) {
+            this.setState({
+                currentindex: this.state.images.length -1
+            })
+        }    
     }
 
     rightImage(event) {
@@ -30,6 +35,11 @@ export default class Five extends Component {
                 currentindex: this.state.currentindex + 1
             })
         }
+        else if (this.state.currentindex === this.state.images.length -1) {
+            this.setState({
+                currentindex: 0
+            })
+        }    
     }
 
     render () {
