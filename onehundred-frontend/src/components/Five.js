@@ -51,8 +51,7 @@ export default class Five extends Component {
         return (
         <div className="Four" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <button onClick={this.leftImage}>Left</button>
-            <div className="Counter" style={{background: 'white'}}>{this.state.images[this.state.currentindex]}</div>
-            <img src={this.state.images[this.state.currentindex]} alt="LinkedIn"></img>
+            <img src={this.state.images[this.state.currentindex]} alt="SocialMedia"></img>
             <button onClick={this.rightImage}>Right</button>
         </div>
         )
