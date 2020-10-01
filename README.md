@@ -4,3 +4,4 @@ The goal of this project is to complete a list of small projects that show off v
 2. Quote of the Day
 3. Comment
 4. Simple Counter
+5. Image Slider
