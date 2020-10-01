@@ -29,7 +29,7 @@ export default class Four extends Component {
 
     render () {
         return (
-        <div className="Four">
+        <div className="Four" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <div className="Counter" style={{background: 'white'}}>Count: {this.state.counter}</div>
             <button onClick={this.lowerCount}>Lower Count</button>
             <button onClick={this.addCount}>Add Count</button>

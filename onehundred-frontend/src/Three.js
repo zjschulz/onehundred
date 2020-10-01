@@ -39,7 +39,7 @@ export default class Three extends Component {
 
     render () {
         return (
-        <div className="Three">
+        <div className="Three" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <form onSubmit={this.handleClick}>
                 <input
                 type="message"

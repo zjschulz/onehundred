@@ -18,7 +18,7 @@ export default class One extends Component {
 
     render () {
         return (
-        <div className="One">
+        <div className="One" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <button onClick={this.handleClick}>Change Background Color</button>
         </div>
         )

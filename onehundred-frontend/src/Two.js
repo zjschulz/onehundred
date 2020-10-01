@@ -27,7 +27,7 @@ export default class Two extends Component {
 
     render () {
         return (
-        <div className="Two">
+        <div className="Two" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <button onClick={this.handleClick}>Generate Quote of the Day</button>
             <span style={{zIndex:'50',fontSize:'0.9em', fontWeight: 'bold'}}>
                 <img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/>
