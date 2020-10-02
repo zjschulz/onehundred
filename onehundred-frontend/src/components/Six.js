@@ -8,8 +8,12 @@ export default class Six extends Component {
 
         this.state = {
             items: [
-                {name: "Doughnut", price: 5},
-                {name: "Cake", price: 10}
+                {name: "Boston Cream", type: "Doughnut", price: 5},
+                {name: "Chocolate Cake", type: "Cake", price: 10},
+                {name: "Eclair", type: "Doughnut", price: 5},
+                {name: "Wedding Cake", type: "Cake", price: 25},
+                {name: "Cupcakes", type: "Cake", price: 8},
+                {name: "Glazed", tpye: "Doughnut", price: 7}
             ]
         }
 
@@ -27,8 +31,9 @@ export default class Six extends Component {
 
     render () {
         return (
-        <div className="Six" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center', display: 'flex'}}>
-            {this.showItems()}
+        <div className="Six" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
+            <button>All</button><button>Doughnut</button><button>Cake</button>
+            <div id="itemcards" style={{display: 'flex', flexWrap: "wrap"}}>{this.showItems()}</div>
         </div>
         )
     }
