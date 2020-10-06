@@ -31,8 +31,10 @@ export default class Four extends Component {
         return (
         <div className="Four" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <div className="Counter" style={{background: 'white'}}>Count: {this.state.counter}</div>
-            <button onClick={this.lowerCount}>Lower Count</button>
-            <button onClick={this.addCount}>Add Count</button>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <button onClick={this.lowerCount}>Lower Count</button>
+                <button onClick={this.addCount}>Add Count</button>
+            </div>
         </div>
         )
     }

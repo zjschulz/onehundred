@@ -47,8 +47,10 @@ export default class Three extends Component {
                 placeholder="message"
                 value={this.state.message}
                 onChange={this.handleChange}
-                required></input>         
-                <button type="submit">Post New Message</button>
+                required></input>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <button type="submit">Post New Message</button>
+                </div>         
             </form>
             {this.showComments()}
         </div>

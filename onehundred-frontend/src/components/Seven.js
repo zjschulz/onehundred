@@ -7,7 +7,7 @@ export default class Seven extends Component {
         super(props);
 
         this.state = {
-            display: "1+1*3"
+            display: ""
         }
 
         this.evaluateDisplay = this.evaluateDisplay.bind(this);

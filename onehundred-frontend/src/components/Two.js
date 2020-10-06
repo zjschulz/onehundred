@@ -28,13 +28,15 @@ export default class Two extends Component {
     render () {
         return (
         <div className="Two" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
-            <button onClick={this.handleClick}>Generate Quote of the Day</button>
-            <span style={{zIndex:'50',fontSize:'0.9em', fontWeight: 'bold'}}>
-                <img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/>
-                    <a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" style={{color: '#ccc', marginLeft: '4px', verticalAlign: 'middle'}}>
-                    They Said So®
-                </a>
-            </span>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <button onClick={this.handleClick}>Generate Quote of the Day</button>
+                <span style={{zIndex:'50',fontSize:'0.9em', fontWeight: 'bold'}}>
+                    <img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/>
+                        <a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" style={{color: '#ccc', marginLeft: '4px', verticalAlign: 'middle'}}>
+                        They Said So®
+                    </a>
+                </span>
+            </div>
             <div className="qod" style={{background: 'white'}}>
                 <h1>{this.state.quote}</h1>
                 <h2>{this.state.author}</h2>

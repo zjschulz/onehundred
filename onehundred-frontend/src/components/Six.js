@@ -63,8 +63,10 @@ export default class Six extends Component {
     render () {
         return (
         <div className="Six" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
-            <button onClick={this.showAll}>All</button><button onClick={this.showDoughnuts}>Doughnut</button><button onClick={this.showCakes}>Cake</button>
-        <div id="itemcards" style={{display: 'flex', flexWrap: "wrap"}}>{this.showItems()}</div>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <button onClick={this.showAll}>All</button><button onClick={this.showDoughnuts}>Doughnut</button><button onClick={this.showCakes}>Cake</button>
+            </div>
+            <div id="itemcards" style={{display: 'flex', flexWrap: "wrap"}}>{this.showItems()}</div>
         </div>
         )
     }
