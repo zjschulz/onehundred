@@ -16,9 +16,11 @@ export default class Seven extends Component {
     }
 
     evaluateDisplay () {
-        this.setState({
-            display: eval(this.state.display)
-        })
+        if (Number.isInteger(parseInt(this.state.display.slice(-1))) && Number.isInteger(parseInt(this.state.display.slice(0,1)))) {
+            this.setState({
+                display: eval(this.state.display)
+            })
+        }
     }
 
     clearDisplay () {
