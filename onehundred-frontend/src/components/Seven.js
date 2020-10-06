@@ -7,16 +7,31 @@ export default class Seven extends Component {
         super(props);
 
         this.state = {
-            display: ""
+            display: "1+1*3"
         }
 
+        this.evaluateDisplay = this.evaluateDisplay.bind(this);
+        this.clearDisplay = this.clearDisplay.bind(this);
+
+    }
+
+    evaluateDisplay () {
+        this.setState({
+            display: eval(this.state.display)
+        })
+    }
+
+    clearDisplay () {
+        this.setState({
+            display: ""
+        })
     }
 
     render () {
         return (
         <div className="Seven" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <form>
-            <div className="screen"></div>
+        <div className="screen">{this.state.display}</div>
             </form>
             <div className="buttons">
                 <button type="button" className="btn btn-yellow" data-num="*">*</button>
@@ -34,8 +49,8 @@ export default class Seven extends Component {
                 <button type="button" className="btn btn-grey" data-num="2">2</button>
                 <button type="button" className="btn btn-grey" data-num="1">1</button>
                 <button type="button" className="btn btn-grey" data-num="0">0</button>
-                <button type="button" className="btn-equal btn-grey">=</button>
-                <button type="button" className="btn-clear btn-grey">C</button>
+                <button onClick={this.evaluateDisplay} type="button" className="btn-equal btn-grey">=</button>
+                <button onClick={this.clearDisplay} type="button" className="btn-clear btn-grey">C</button>
             </div>
         </div>
         )
