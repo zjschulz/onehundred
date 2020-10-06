@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../style/calculator.css';
 
 export default class Seven extends Component {
 
