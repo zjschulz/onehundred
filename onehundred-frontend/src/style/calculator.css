@@ -3,8 +3,9 @@
    }
    .screen{
     flex: 95%;
-    font-size: 7rem;
+    font-size: 6rem;
     padding: 0.5rem;
+    height: 6rem;
     background: rgb(41,41,56);
     color: white;
     border: 1px solid black;
