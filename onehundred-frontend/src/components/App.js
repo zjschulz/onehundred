@@ -5,6 +5,7 @@ import Three from './Three';
 import Four from './Four';
 import Five from './Five';
 import Six from './Six';
+import Seven from './Seven';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Four/>
       <Five/>
       <Six/>
+      <Seven/>
     </div>
   );
 }
