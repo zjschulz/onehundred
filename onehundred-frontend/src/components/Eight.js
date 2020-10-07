@@ -8,16 +8,11 @@ export default class Eight extends Component {
         this.state = {
             bill: "",
             people: "",
-            tip: "0.2"
+            tip: "0.2",
         }
 
-        this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
 
-    }
-
-    handleSubmit(event) {
-        event.preventDefault();
     }
 
     handleChange(event) {
@@ -30,7 +25,7 @@ export default class Eight extends Component {
         return (
             <div className="Eight" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
                 <h3>Tip Calculator</h3>
-                <form onSubmit={this.handleSubmit}>
+                <form>
                     <input
                     type="bill"
                     name="bill"
@@ -56,11 +51,12 @@ export default class Eight extends Component {
                         <option value="0.1">Good - 10%</option>
                         <option value="0.02">Bad - 2%</option>
                     </select><p></p>
-                    <button type="submit">Calculate Tip</button>
-                </form>
-                Tip Amount {this.state.bill*this.state.tip}
-                Total Amount {Number(this.state.bill)+Number(this.state.bill*this.state.tip)}
-                Each Person Owes {(Number(this.state.bill)+Number(this.state.bill*this.state.tip))/Number(this.state.people)}
+                </form><p></p>
+                <div style={{display: ""}}>
+                Tip Amount {this.state.bill*this.state.tip}<p></p>
+                Total Amount {Number(this.state.bill)+Number(this.state.bill*this.state.tip)}<p></p>
+                Each Person Owes {(Number(this.state.bill)+Number(this.state.bill*this.state.tip))/Number(this.state.people)}<p></p>
+                </div>
             </div>
         )
     }
