@@ -8,3 +8,4 @@ The goal of this project is to complete a list of small projects that show off v
 6. Filter
 7. Calculator
 8. Tip Calculator
+Special. NavBar
