@@ -15,14 +15,13 @@ export default class Two extends Component {
 
     handleClick(event) {
         event.preventDefault();
-        fetch('http://quotes.rest/qod.json')
+        fetch('https://quotes.rest/qod.json')
         .then(response => response.json())
         .then(data => this.setState({
             quote: data.contents.quotes[0].quote,
             author: data.contents.quotes[0].author
         }))
         .catch(err => alert(err))
-        //populate a div element with a new quote
     }
 
     render () {
