@@ -49,7 +49,7 @@ export default class Five extends Component {
 
     render () {
         return (
-        <div className="Five" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div id="Five" className="Five" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <button onClick={this.leftImage}>Left</button>
             <img src={this.state.images[this.state.currentindex]} alt="SocialMedia"></img>
             <button onClick={this.rightImage}>Right</button>

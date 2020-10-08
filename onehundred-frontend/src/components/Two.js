@@ -27,7 +27,7 @@ export default class Two extends Component {
 
     render () {
         return (
-        <div className="Two" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
+        <div id="Two" className="Two" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <button onClick={this.handleClick}>Generate Quote of the Day</button>
                 <span style={{zIndex:'50',fontSize:'0.9em', fontWeight: 'bold'}}>

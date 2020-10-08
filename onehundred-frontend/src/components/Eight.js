@@ -41,7 +41,7 @@ export default class Eight extends Component {
     
     render () {
         return (
-            <div className="Eight" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
+            <div id="Eight" className="Eight" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
                 <h3>Tip Calculator</h3>
                 <form onSubmit={this.handleSubmit}>
                     <input

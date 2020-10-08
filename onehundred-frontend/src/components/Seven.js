@@ -37,7 +37,7 @@ export default class Seven extends Component {
 
     render () {
         return (
-        <div className="Seven" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
+        <div id="Seven" className="Seven" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <form>
         <div className="screen" style={{borderRadius: "10px 10px 0px 0px"}}>{this.state.display}</div>
             </form>
