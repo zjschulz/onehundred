@@ -66,7 +66,7 @@ export default class Six extends Component {
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <button onClick={this.showAll}>All</button><button onClick={this.showDoughnuts}>Doughnut</button><button onClick={this.showCakes}>Cake</button>
             </div>
-            <div id="itemcards" style={{display: 'flex', flexWrap: "nowrap"}}>{this.showItems()}</div>
+            <div id="itemcards" style={{display: 'flex', flexWrap: "wrap"}}>{this.showItems()}</div>
         </div>
         )
     }
