@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './Navbar';
 import One from './One';
 import Two from './Two';
 import Three from './Three';
@@ -11,6 +12,7 @@ import Eight from './Eight';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <One/>
       <Two/>
       <Three/>
