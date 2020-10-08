@@ -39,7 +39,7 @@ export default class Seven extends Component {
         return (
         <div className="Seven" style={{background: 'lightgrey', borderStyle: 'solid', margin: '1rem', textAlign: 'center'}}>
             <form>
-        <div className="screen">{this.state.display}</div>
+        <div className="screen" style={{borderRadius: "10px 10px 0px 0px"}}>{this.state.display}</div>
             </form>
             <div className="buttons">
                 <button onClick={this.updateDisplay} type="button" className="btn btn-yellow" value="*">*</button>
@@ -58,7 +58,7 @@ export default class Seven extends Component {
                 <button onClick={this.updateDisplay} type="button" className="btn btn-grey" value="1">1</button>
                 <button onClick={this.updateDisplay} type="button" className="btn btn-grey" value="0">0</button>
                 <button onClick={this.evaluateDisplay} type="button" className="btn-equal btn-grey">=</button>
-                <button onClick={this.clearDisplay} type="button" className="btn-clear btn-grey">C</button>
+                <button onClick={this.clearDisplay} type="button" className="btn-clear btn-grey" style={{borderRadius: "0px 0px 0px 10px"}}>C</button>
             </div>
         </div>
         )

@@ -42,3 +42,6 @@
    .btn-clear{
     background: red;
    }
+div {
+    border-radius: 15px;
+  }   
