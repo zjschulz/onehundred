@@ -11,7 +11,7 @@ export default class One extends Component {
     handleClick(event) {
         event.preventDefault();
         const body = document.querySelector('body')
-        const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'white', 'cyan', 'orange', 'violet', 'brown']
+        const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'cyan', 'orange', 'violet', 'brown']
         const colorIndex= parseInt(Math.random()*colors.length+1)
         body.style.backgroundColor = colors[colorIndex]
     }
