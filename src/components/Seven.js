@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../style/style.css';
 
 export default class Seven extends Component {
 

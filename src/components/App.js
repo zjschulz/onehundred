@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import '../style/style.css';
 import One from './One';
 import Two from './Two';
 import Three from './Three';
