@@ -4,8 +4,9 @@ export default class ThreeA extends Component {
     
     render(){
         return(
-            <div className="ThreeA" style={{background: 'white'}}>
-            {this.props.message}    
+            <div className="ThreeA" style={{background: 'white', borderRadius: "0px"}}>
+            {this.props.message}
+            <p></p>    
             </div>
         )
     }
