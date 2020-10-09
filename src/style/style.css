@@ -69,17 +69,6 @@ h1 {
   display: flex;
 }
 
-.Navbar div {
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 1rem;
-  padding: 1rem;
-  flex: wrap;
-}
-
 .Navbar a {
   color: black;
   text-align: center;
