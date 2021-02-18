@@ -6,7 +6,7 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <h1>100 Components of Code</h1>
+        <h1>Practice Components of Code</h1>
         <nav className="Navbar">
             <a href="#One">One</a>
             <a href="#Two">Two</a>
